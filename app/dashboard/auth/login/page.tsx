@@ -70,7 +70,7 @@ export default function Login() {
 
   function onSubmitPassword(values: z.infer<typeof passwordSchema>) {
     console.log(values);
-    window.location.href = "/admin/accounts";
+    window.location.href = "/client";
   }
 
   return (
@@ -121,7 +121,7 @@ export default function Login() {
                 )}
               />
               <div className="fixed bottom-5 left-0 right-0 px-8">
-                <button type="submit" className={buttonVariants({ variant: "submit", size:"lg" })}>
+                <button type="submit" className={buttonVariants({ variant: "submit", size:"md" })}>
                   Continuar
                 </button>
               </div>
@@ -188,7 +188,7 @@ export default function Login() {
                 )}
               />
               <div className="fixed bottom-5 left-0 right-0 px-8">
-                <button type="submit" className={buttonVariants({ variant: "submit", size:"lg" })}>
+                <button type="submit" className={buttonVariants({ variant: "submit", size:"md" })}>
                   Finalizar
                 </button>
               </div>

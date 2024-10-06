@@ -3,7 +3,7 @@ import { buttonVariants } from "@/components/ui/button";
 import Image from "next/image";
 import { useState } from "react";
 import { ChevronDown, ChevronRight, Search } from "lucide-react";
-
+import Link from "next/link";
 const accountsData = [
     {
         id: 1,
@@ -37,13 +37,16 @@ export default function Accounts() {
 
     return (
         <div className="bg-black text-white h-screen p-8">
-            <Image
-                src="/fonts/LogoBranco.svg"
-                width={50}
-                height={18}
-                alt="logo Ica-Bank"
-                className="mb-4"
-            />
+            <Link href="/">
+                <Image
+                    src="/fonts/LogoBranco.svg"
+                    width={50}
+                    height={18}
+                    alt="logo Ica-Bank"
+                    className="mb-4"
+                />
+
+            </Link>
 
             <h2 className="text-xl mb-4">Contas Abertas</h2>
 
@@ -90,13 +93,13 @@ export default function Accounts() {
                                 <p className="text-sm mb-4">{account.email}</p>
 
                                 <div className="flex gap-4 justify-between">
-                                    <button
+                                     <Link href='/client'
                                         className={`${buttonVariants({
                                             variant: "submit",
                                         })} w-full mr-2`}
                                     >
                                         Entrar
-                                    </button>
+                                    </Link>
                                     <button
                                         className={`${buttonVariants({
                                             variant: "destructive",

@@ -19,7 +19,7 @@ export default function Home() {
 
         <Link href='/dashboard/auth/login' className={buttonVariants({ variant: "default" })}>
           <Image
-            src="/fonts/money.svg"
+            src="/fonts/account plus.svg"
             width={24}
             height={24}
             alt="dinheiro"
@@ -27,9 +27,9 @@ export default function Home() {
           Criar Conta
         </Link>
 
-        <Link href='/#' className={buttonVariants({ variant: "default" })}>
+        <Link href='/admin/accounts' className={buttonVariants({ variant: "default" })}>
           <Image
-            src="/fonts/contas.svg"
+            src="/fonts/account view.svg"
             width={24}
             height={24}
             alt="contas"
